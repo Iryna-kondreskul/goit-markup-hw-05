@@ -843,7 +843,7 @@ body {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.is-hiden {
+.is-hidden {
   /* Полностью прозрачный */
   opacity: 0;
   /* все содержимое  backdrop спрятано*/
