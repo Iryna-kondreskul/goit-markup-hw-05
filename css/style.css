@@ -287,12 +287,13 @@ body {
   color: var(--maket-color);
 }
 /* Кнопка */
-.modal-btn {
+.hero-modal-btn {
+  display: inline-block;
+  font-family: inherit;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
-  display: flex;
   letter-spacing: 0.06em;
 
   color: var(--maket-color);
@@ -350,10 +351,8 @@ body {
 .overlay-card-annexes {
   position: absolute;
   width: 100%;
-  height: 16%;
   left: 0;
   bottom: 0;
-  /* overflow: auto; */
 
   padding: 27px 82px;
   font-size: 14px;
@@ -785,9 +784,11 @@ body {
   overflow: hidden;
 }
 
+.team-list-link-item {
+}
 /* a - ссылка */
-.team-list-link-item:hover .overlay,
-.team-list-link-item:focus .overlay {
+.item-card:hover .overlay,
+.item-card:focus .overlay {
   transform: translateY(0%);
 }
 /* p */
