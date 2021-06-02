@@ -417,16 +417,14 @@ body {
 }
 
 .sect-text {
-  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  margin-top: 20px;
-  /* width: 206px; */
-  height: 44px;
+  background-color: var(--maket-color);
 }
 /* ----------------------------------------- */
 /* ul */
@@ -435,7 +433,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .icon-soc {
   margin: 30px;
@@ -495,12 +493,11 @@ body {
 .list-labe-company {
   /* outline: 2px solid tomato; */
   display: flex;
+  justify-content: space-between;
 }
 
 /* li */
 .company-label {
-  width: 170px;
-  height: 92px;
 }
 
 .company-label:not(:last-child) {
@@ -514,6 +511,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: 20px;
 
   border: 1px solid var(--color-client-icon);
   color: var(--titel-text-color);
@@ -700,7 +698,7 @@ body {
 
   /* прозрачность */
   /* background-color: transparent; */
-  background-color: var(--maket-color);
+  background-color: var(--bac-color-buttons);
   border-radius: 4px;
 
   color: var(--primary-text-color);
@@ -713,6 +711,7 @@ body {
   color: var(--maket-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* стиль для залоговков списков */
@@ -734,8 +733,6 @@ body {
   justify-content: center;
   display: flex;
   margin: 0px 0px 50px;
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .filter-btn {
