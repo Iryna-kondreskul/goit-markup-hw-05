@@ -5,7 +5,7 @@
   --title-fon-body-color: #e5e5e5;
   --accent-color: #2196f3;
   --maket-color: #ffffff;
-  /* -color: #ececec; */
+  --color-border-header: #ececec;
   --section-dark-color: #2f303a;
   --color-main-button: ;
   --bac-color-buttons: #f5f4fa;
@@ -105,7 +105,7 @@ body {
 .header {
   /* outline: 2px solid red; */
   height: 80px;
-  border-bottom: 1px solid var(--maket-color);
+  border-bottom: 1px solid var(--color-border-header);
 }
 
 /* .header::after {
@@ -201,6 +201,12 @@ body {
   margin-right: 50px;
 }
 
+/*  Ссылка центрировать иконки*/
+.mail-link,
+.tel-link {
+  display: flex;
+  align-items: center;
+}
 /* Ссылка активная */
 .menu-link:hover,
 .menu-link:focus,
@@ -262,7 +268,11 @@ body {
   text-align: center;
 }
 /* Эффективное решение для вашего бизнеса */
-
+.hero-container {
+  max-width: 696px;
+  text-align: center;
+  margin: 0 auto;
+}
 .hero-name {
   font-weight: 900;
   font-size: 44px;
