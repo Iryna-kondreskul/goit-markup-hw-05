@@ -98,13 +98,6 @@ body {
   text-decoration: none;
 }
 
-/* ul стили для иконок соц сетей*/
-.list-icon-soc-network {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .list-icon-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -163,7 +156,8 @@ body {
 
 .menu-link,
 .tel-link,
-.mail-link {
+.mail-link,
+.social-list-icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -432,9 +426,14 @@ body {
   background-color: var(--maket-color);
 }
 /* ----------------------------------------- */
-
+/* ul стили для иконок соц сетей*/
+.list-icon-soc-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .icon-soc {
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 /* ширина для футер div. ul */
@@ -459,6 +458,8 @@ body {
 
   border-radius: 50%;
   color: var(--color-client-icon);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* svg */
@@ -491,10 +492,6 @@ body {
   justify-content: center;
 }
 
-/* li */
-.company-label {
-}
-
 .company-label:not(:last-child) {
   margin-right: 30px;
 }
@@ -511,6 +508,8 @@ body {
   border-radius: 4px;
   border: 1px solid var(--color-client-icon);
   color: var(--titel-text-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .labe-company:hover,
@@ -601,6 +600,7 @@ body {
 
 .footer-link {
   color: var(--maket-color);
+  /* transition: background-color 2050ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .footer-info {
@@ -639,6 +639,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.footer-icon-soc-network {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .icon-footer-network {
   fill: var(--maket-color);
@@ -648,6 +653,7 @@ body {
 .lict-icon-item {
   width: 44px;
   height: 44px;
+  margin-right: 10px;
 }
 .lict-icon-item:not(:last-child) {
   margin-right: 10pxpx;
@@ -662,6 +668,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon-footer:hover,
@@ -691,9 +699,13 @@ body {
   background-color: var(--bac-color-buttons);
   border-radius: 4px;
 
+  padding: 6px 22px;
+
   color: var(--primary-text-color);
   cursor: pointer;
   border: transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:focus,
 .filter-btn:hover {
@@ -725,10 +737,6 @@ body {
   margin: 0px 0px 50px;
 }
 
-.filter-btn {
-  padding: 6px 22px;
-}
-
 .item-btn:not(:last-child) {
   margin-right: 8px;
 }
@@ -745,7 +753,8 @@ body {
   margin-top: -30px;
 }
 
-.item-card:hover {
+.item-card:hover,
+.item-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -775,13 +784,14 @@ body {
   overflow: hidden;
 }
 
-.team-list-link-item {
-}
 /* a - ссылка */
 .item-card:hover .overlay,
-.item-card:focus .overlay {
+.item-card:focus .overlay,
+.team-list-link-item:hover .overlay,
+.team-list-link-item:focus .overlay {
   transform: translateY(0%);
 }
+
 /* p */
 .overlay {
   position: absolute;
@@ -790,7 +800,7 @@ body {
   height: 100%;
   width: 100%;
   /* отвечает за переполнение - если оно есть и благодаря этому свойству текст можно будет скролить. Так поьзователь сможет дочитать содержимое до конца */
-  overflow: auto;
+  /* overflow: auto; */
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -855,6 +865,8 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-dtn {
